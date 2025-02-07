@@ -4,7 +4,7 @@ This repository contains the frontend tasks and answers for the exercises. Curre
 
 ## Structure
 
-- `html/`: Contains HTML files for the exercises.
+- `html/`: Contains HTML files for the exercises for Elzeoro web school html course.
 
 ## Future Updates
 

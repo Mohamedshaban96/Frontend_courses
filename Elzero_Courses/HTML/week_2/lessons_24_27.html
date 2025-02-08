@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- <<1>> -->
+    <form action="test.py" method="post">
+      <label>Username</label>
+      <br />
+      <input
+        type="text"
+        required
+        placeholder="Write your name"
+        name="Username"
+      />
+      <br />
+      <hr />
+      <label>Password</label>
+      <br />
+      <input type="password" required placeholder="password" name="password" />
+      <br />
+      <hr />
+      <label>Mobile</label>
+      <br />
+      <input
+        type="tel"
+        placeholder="write your phone number"
+        name="Mobile_Number"
+      />
+      <br />
+      <hr />
+      <label>Email</label>
+      <br />
+      <input type="email" placeholder="Enter a valid e-mail" name="Email" />
+      <br />
+      <hr />
+      <label>Subject</label>
+      <br />
+      <input type="text" placeholder="enter your subject" name="subject" />
+      <br />
+      <hr />
+      <input type="hidden" value="123456789" name="Hidden_value" />
+      <input type="submit" value="Send Data" />
+      <input type="reset" value="Empty Form" />
+    </form>
+    <br />
+    <img
+      src="../media/query string for tasks 24-27.png"
+      alt="query string for the form"
+      width="200"
+    />
+    <hr />
+    <!-- <<2>> -->
+
+    <form>
+      <input type="range" value="400" min="100" max="500" step="50" />
+    </form>
+  </body>
 </html>

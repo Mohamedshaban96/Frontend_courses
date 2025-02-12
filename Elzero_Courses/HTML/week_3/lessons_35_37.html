@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <<1>> -->
+
+    <!-- What is the appropriate element to be the title of the entire page?
+=> button
+
+What is the appropriate element to be the title of a section within the page?
+=> h2
+
+What is the appropriate element to contain a text paragraph?
+=> <p></p>
+
+How do you specify the language of your page content? 
+You can write the full element with the attributes for specifying the language.
+=> <html lang="en">
+
+In the world of Accessibility, is it better to write 10 – 20 or 10 To 20 ?
+=> 10 to 20
+
+If you have a Div element and want to access it by pressing the Tab Button, what would you do to the element?
+=> give him attribute tabindex="0"
+
+What does the word ARIA mean?
+=> accessable rich internet application
+
+-->
+
+    <!-- <<2>> -->
+    <div class="choose-skill">
+      <div class="skill" aria-labelledby="skill_one">Python</div>
+      <label id="skill_one">Skill One</label>
+
+      <div class="skill" aria-labelledby="skill_two">PHP</div>
+      <label id="skill_two">Skill Two</label>
+      
+      <div class="skill" aria-labelledby="skill_three">JavaScript</div>
+      <label id="skill_three">Skill Three</label>
+    </div>
+  </body>
+</html>

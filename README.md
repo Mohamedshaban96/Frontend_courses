@@ -6,6 +6,8 @@ This repository contains the frontend tasks and answers for the exercises. Curre
 
 - `html/`: Contains HTML files for the exercises from Elzeoro web school html course.
 
+- `css/`: Contains CSS files for the exercises from Elzeoro web school css course.
+
 ## Future Updates
 
 - Adding CSS files.

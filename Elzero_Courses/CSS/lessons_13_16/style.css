@@ -1,0 +1,26 @@
+/* << 1 >> */
+div .child .title {
+  color: red;
+}
+
+div .title {
+  color: blue;
+}
+
+div p,
+.title {
+  color: green;
+}
+
+/* << 2 >> */
+
+.ex-2 {
+  background-color: #a52a2a;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  width: fit-content;
+  max-width: 400px;
+  max-height: 30px;
+  overflow: hidden;
+}

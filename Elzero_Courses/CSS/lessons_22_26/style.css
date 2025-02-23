@@ -1,0 +1,17 @@
+/* << 1 >> */
+div {
+  padding: 15px 20px;
+  border: 2px solid #ff5722;
+  text-align: center;
+}
+
+div p {
+  padding: inherit;
+  border: inherit;
+  background-color: #dddddd;
+}
+
+/* << 2 >> */
+.ex2-1{
+    
+}

@@ -1,3 +1,7 @@
+html {
+  font-size: 20px;
+}
+
 /* << 1 >> */
 div {
   padding: 15px 20px;
@@ -12,6 +16,32 @@ div p {
 }
 
 /* << 2 >> */
-.ex2-1{
-    
+.ex2-1 {
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ex2-2 {
+  font-family: "Cairo", serif;
+  font-weight: 700;
+}
+
+.ex2-3 {
+  font-family: "Jomhuria", serif;
+  font-weight: 400;
+}
+
+/* << 3 >> */
+.ex3-1 {
+  font-size: 2.5rem;
+  font-size: 50px;
+}
+
+.ex3-2 {
+  font-size: 2rem;
+}
+
+.ex3-3 {
+  font-size: 1.5rem;
 }

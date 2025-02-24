@@ -1,0 +1,34 @@
+/* << 1 >> */
+.parent {
+  background-color: #eeeeee;
+  width: 1000px;
+  padding: 0;
+  text-align: center;
+}
+
+.ex-1 {
+  padding: 10px 0;
+  background-color: #dddddd;
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.fr {
+  margin: 15px;
+  width: calc(100% - 30px);
+}
+
+.secr {
+  width: calc((100% - 60px) / 3);
+}
+
+.thirdr {
+  width: calc((100% - 45px) / 2);
+}
+
+.fourthrow {
+  width: calc((100% - (5 * 15px)) / 4);
+}
+.clear {
+  clear: both;
+}

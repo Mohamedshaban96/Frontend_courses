@@ -10,7 +10,6 @@ This repository contains the frontend tasks and answers for the exercises. Curre
 
 ## Future Updates
 
-- Adding CSS files.
 - Including JavaScript exercises.
 
 Stay tuned for more updates!

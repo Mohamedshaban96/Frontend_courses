@@ -13,6 +13,7 @@
   margin-bottom: 15px;
   margin-left: 15px;
 }
+
 .fr {
   margin: 15px;
   width: calc(100% - 30px);
@@ -29,6 +30,27 @@
 .fourthrow {
   width: calc((100% - (5 * 15px)) / 4);
 }
+
 .clear {
   clear: both;
+}
+
+/* << 2 >> */
+
+.div {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: #b3b3b3;
+  color: black;
+}
+
+.one {
+  background-color: rgba(179, 179, 179, 0.1);
+}
+
+.two {
+  opacity: 0.1;
 }

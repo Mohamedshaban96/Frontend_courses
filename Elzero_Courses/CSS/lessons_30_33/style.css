@@ -112,3 +112,54 @@ ol li {
   background-color: white;
   list-style-position: inside;
 }
+
+/* << 4 >> */
+
+table {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 2px solid #32a599;
+  border-spacing: 2px;
+}
+
+table caption {
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+thead td {
+  background-color: #404040;
+  color: white;
+  font-weight: bold;
+  padding: 15px 10px;
+}
+
+tbody td {
+  background-color: #eeeeee;
+}
+
+table img {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  padding: 4px;
+  border: 2px solid #e4e4e4;
+}
+
+table button {
+  color: #ffffff;
+  padding: 3px 10px;
+  text-transform: capitalize;
+  margin: 3px;
+  font-weight: 600;
+}
+
+.view {
+  background-color: #03a9f4;
+}
+
+.delete {
+  background-color: #e91e63;
+}

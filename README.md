@@ -1,15 +1,23 @@
-# Frontend Courses
+# Frontend Courses Journey
 
-This repository contains the frontend tasks and answers for the exercises. Currently, it includes HTML only. We will modify and add more content later.
+Welcome to my Frontend Courses Journey repository! This repo is dedicated to documenting my progress and projects as I learn and master front-end development.
 
-## Structure
+## Contents
 
-- `html/`: Contains HTML files for the exercises from Elzeoro web school html course.
+- **Elzero Web School HTML Course**
+    - Full exercises answered
 
-- `css/`: Contains CSS files for the exercises from Elzeoro web school css course.
+- **Elzero Web School CSS Course**
+    - Partially completed exercises (currently working on)
 
-## Future Updates
+## Future Plans
 
-- Including JavaScript exercises.
+- Complete the Elzero Web School CSS Course
+- Add projects related to the CSS course
+- Start and document JavaScript courses and projects
 
-Stay tuned for more updates!
+Stay tuned for updates as I continue to learn and build more projects!
+
+## Author
+
+Mohammed

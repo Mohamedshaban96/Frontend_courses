@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* task_1 */
+
+.ex-1 {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  float: left;
+  margin: 20px;
+  box-shadow: -5px -5px 1px #e91e63, 5px 5px 1px #2196f3;
+  position: relative;
+  counter-increment: div-n;
+}
+
+.ex-1::before {
+  content: counter(div-n);
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  color: white;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -12.5px;
+  left: 50%;
+  margin-left: -12.5px;
+}
+
+.ex-1::after {
+  content: "Element";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}

@@ -1,24 +1,26 @@
-body {
+* {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  text-transform: capitalize;
+  white-space: nowrap;
 }
 
 /* task_1 */
 
-.ex-1 {
+.ex-1 div {
   height: 100px;
   width: 100px;
   border: 2px solid #000;
   border-radius: 50%;
   background-color: #eeeeee;
-  float: left;
+  display: inline-block;
   margin: 20px;
   box-shadow: -5px -5px 1px #e91e63, 5px 5px 1px #2196f3;
   position: relative;
   counter-increment: div-n;
 }
 
-.ex-1::before {
+.ex-1 div::before {
   content: counter(div-n);
   height: 25px;
   width: 25px;
@@ -33,11 +35,95 @@ body {
   margin-left: -12.5px;
 }
 
-.ex-1::after {
+.ex-1 div::after {
   content: "Element";
   position: absolute;
   width: 100px;
   height: 100px;
   text-align: center;
   line-height: 100px;
+}
+
+/* task_2 */
+
+.ex-2 div {
+  height: 100px;
+  width: 100px;
+  margin: calc(50vh - 50px) auto;
+  border-radius: 0 50px 0 50px;
+  border-top-left-radius: 10px 30px;
+  border-bottom-right-radius: 10px 30px;
+  box-shadow: 0px 0px 15px #000 inset;
+  background-color: #efefef;
+}
+
+/* task_3 */
+
+.ex-3 {
+  width: 550px;
+  margin: auto;
+  padding: 0;
+}
+
+.container {
+  background-color: #eeeeee;
+  display: inline-block;
+  width: 250px;
+  height: 300px;
+  margin: auto;
+}
+
+.plan {
+  height: 40px;
+  width: 200px;
+  background-color: #2196f3;
+  color: white;
+  font-weight: 700;
+  margin: 15px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.price {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #dddddd;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 200px;
+  font-size: 2.5rem;
+}
+
+.bf {
+  margin-right: 45px;
+  position: relative;
+}
+
+.bf::before {
+  content: "or";
+  position: absolute;
+  background-color: #2196f3;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  line-height: 25px;
+  color: white;
+  font-size: 14px;
+  top: 50%;
+  margin-top: -12.5px;
+  right: -38px;
+}
+
+.bf::after {
+  content: "";
+  height: inherit;
+  width: 1px;
+  position: absolute;
+  background-color: #2196f3;
+  top: 0;
+  right: -25px;
+  z-index: -1;
 }

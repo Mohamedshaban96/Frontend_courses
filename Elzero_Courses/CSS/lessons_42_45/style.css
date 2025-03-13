@@ -1,0 +1,70 @@
+/* task_ */
+:root {
+  --mainPadding: 10px;
+  --mainColor: #009688;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.ex-1 .parent,
+.ex-1 .child {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  padding: var(--mainPadding);
+}
+.ex-1 .parent {
+  height: 200px;
+  width: 400px;
+  background-color: #f2f2f4;
+  margin: 40px auto;
+  transition: margin-top 0.5s;
+}
+
+.ex-1 .child {
+  width: 350px;
+  background-color: #dededc;
+  transition: margin-top 0.5s 0.5s;
+  margin: 10px auto;
+}
+
+.ex-1 .parent:hover {
+  margin-top: 20px;
+}
+
+.ex-1 .parent:hover .child {
+  margin-top: 20px;
+}
+
+/* task_2 */
+
+.ex-2 div {
+    font-size: 20px !important;
+    background-color: #eeeeee !important;
+    border: none !important;
+    color: transparent !important;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    position: relative;
+}
+
+.ex-2 div::before{
+    content: "Elzero";
+    color: black;
+    position: absolute;
+    font-size: 20px;
+    /* text-align: center; */
+
+}
+
+/* task_3 */
+
+.ex-3 div {
+    color: var(--mainColor, red);
+    border: 3px solid var(--mainColor, black);
+    padding: var(--mainPadding, 10px);
+    margin: 10px;
+}

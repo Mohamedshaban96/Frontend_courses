@@ -20,5 +20,5 @@ Stay tuned for updates as I continue to learn and build more projects!
 
 ## Author
 
-Mohammed
+Mohammed waleed
 

@@ -1,0 +1,45 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* task_1 */
+
+.ex-1 div {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff5722;
+  font-weight: 600;
+  background-color: #eeeeee;
+  margin: auto;
+  box-shadow: 5px 0px #ff5722, -5px 0px #53bfee;
+}
+
+/* task_2 */
+
+.ex-2 .parent {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.ex-2 .parent div {
+  background-color: #f44336;
+  color: white;
+  width: 182px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

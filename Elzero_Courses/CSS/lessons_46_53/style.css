@@ -43,3 +43,81 @@
   justify-content: center;
 }
 
+/* task_3 */
+
+.ex-3 .parent {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  justify-content: space-between;
+}
+
+.ex-3 .parent div {
+  background-color: #607d8b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  padding: 10px;
+}
+
+.ex-3 .one {
+  align-self: flex-start;
+  order: 1;
+}
+
+.ex-3 .two {
+  order: 2;
+}
+.ex-3 .three {
+  align-self: flex-end;
+  order: 5;
+}
+
+.ex-3 .four {
+  order: 4;
+}
+
+.ex-3 .five {
+  order: 3;
+}
+
+.ex-3 .six {
+  order: 6;
+}
+
+/* task_4 */
+
+.ex-4 .parent {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .ex-4 .parent div {
+    background-color: #009688;
+    color: white;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ex-4 .two {
+    align-self: flex-start;
+    width: 50%;
+  }
+
+  

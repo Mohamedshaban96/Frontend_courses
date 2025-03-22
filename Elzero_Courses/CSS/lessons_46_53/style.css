@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --padding: 10px;
+  --secondryBackGroung: #dddddd;
+  --marginBot: 10px;
+}
+
 /* task_1 */
 
 .ex-1 div {
@@ -94,30 +100,143 @@
 /* task_4 */
 
 .ex-4 .parent {
-    width: 600px;
-    height: 300px;
-    margin: auto;
-    padding: 10px;
-    background-color: #eeeeee;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-  .ex-4 .parent div {
-    background-color: #009688;
-    color: white;
-    height: 80px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.ex-4 .parent div {
+  background-color: #009688;
+  color: white;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .ex-4 .two {
-    align-self: flex-start;
-    width: 50%;
-  }
+.ex-4 .two {
+  align-self: flex-start;
+  width: 50%;
+}
 
-  
+/* task_5 */
+
+.ex-5 .parent {
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  padding: 10px;
+  background-color: #eeeeee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ex-5 .parent div {
+  width: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f44336;
+  height: 50%;
+}
+
+.ex-5 .parent .one {
+  background-color: #ff9800;
+}
+
+.ex-5 .parent .two {
+  background-color: #8bc34a;
+  align-self: flex-end;
+}
+
+.ex-5 .parent .three {
+  background-color: #795548;
+}
+
+.ex-5 .parent .four {
+  order: -1;
+  background-color: #673ab7;
+  align-self: flex-end;
+}
+
+/* task_6 */
+
+.ex-6 .page {
+  width: 100%;
+  padding: var(--padding);
+  background-color: #eeeeee;
+}
+
+.ex-6 .page .header {
+  width: 100%;
+  height: 50px;
+  margin-bottom: var(--marginBot);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ex-6 .page .header .logo {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondryBackGroung);
+  padding: var(--padding);
+  width: 100px;
+  margin-right: 10px;
+}
+
+.ex-6 .page .header ul {
+  list-style: none;
+  height: 45px;
+  display: flex;
+  padding: var(--padding);
+  background-color: var(--secondryBackGroung);
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.ex-6 .page .header ul li {
+  margin: 0 10px;
+}
+
+.ex-6 .page .main-area {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--marginBot);
+}
+
+.ex-6 .page .main-area .content {
+  padding: var(--padding);
+  background-color: var(--secondryBackGroung);
+  margin-right: 10px;
+  flex-grow: 2;
+}
+
+.ex-6 .page .main-area .sidebar {
+  flex-grow: 1;
+  padding: var(--padding);
+  background-color: var(--secondryBackGroung);
+}
+
+.ex-6 .page .footer {
+  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondryBackGroung);
+}

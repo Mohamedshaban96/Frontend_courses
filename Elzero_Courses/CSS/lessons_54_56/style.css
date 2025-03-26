@@ -63,3 +63,35 @@
 }
 
 /* Pseudo elements can only apply to block-level elements, so ::first-letter won't work with display flex */
+
+
+/* task_2 */
+
+.ex-2 p {
+  width: 600px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px auto;
+  background-color: #eeeeee;
+  padding: 15px;
+  border: none;
+  position: relative;
+  color: #787b7e;
+  outline: none;
+  caret-color: red;
+}
+
+.ex-2 p:focus {
+  color: black;
+}
+
+.ex-2 p::before {
+  content: "";
+  width: 600px;
+  height: 3px;
+  position: absolute;
+  background: linear-gradient(to right, #f44336 50%, #029788 50%);
+  bottom: -3px;
+  left: 0;
+}
+
+/* pseudo-elements like ::after and ::before cannot be applied to <input> elements. They only work on elements that can contain other elements or text, and <input> is a self-closing (void) element, meaning it has no content. */

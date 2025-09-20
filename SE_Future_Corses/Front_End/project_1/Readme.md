@@ -1,4 +1,4 @@
-## Coffee Website Project
+# Coffee Website Project
 
 This project is a simple coffee website created using only classic HTML and CSS (without HTML5 or CSS3 features). It was developed as the first assignment for the Front End course at SEF Academy.
 

@@ -1,0 +1,890 @@
+/* 
+زود بادينج الهيدر
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  height: 2000px;
+}
+
+/* ------------ Header --------- */
+
+.head {
+  background-color: rgba(238, 233, 233, 0.833);
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  line-height: 50px;
+  padding: 0 30px;
+  z-index: 999;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.home-search {
+  display: inline;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+}
+
+.head i {
+  font-size: 24px;
+}
+
+.search i {
+  font-size: 20px;
+  position: absolute;
+  right: 12px;
+  top: 16px;
+}
+
+.head input {
+  height: 30px;
+  border-radius: 25px;
+  width: 200px;
+  border: none;
+  padding-left: 10px;
+}
+
+.header-links {
+  float: right;
+}
+
+.header-links li {
+  list-style-type: none;
+  display: inline-block;
+  text-transform: capitalize;
+  margin-right: 15px;
+}
+
+.header-links li a {
+  text-decoration: none;
+  color: #533b28;
+  position: relative;
+}
+
+.header-links li a::before {
+  content: "";
+  background-color: #533b28;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  transition: 0.4s;
+}
+
+.header-links li a:hover::before {
+  width: 100%;
+}
+
+.blog {
+  position: relative;
+}
+
+.header-links-drop-down {
+  position: absolute;
+  background-color: rgb(238, 233, 233);
+  width: 150px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: none;
+  transition: 0.4s;
+  border: 1px solid rgba(0, 0, 0, 0.372);
+}
+
+.blog:hover .header-links-drop-down {
+  display: block;
+}
+
+/* -------------------------------------------- Main section ---------------------------------- */
+
+.intro {
+  background: url(../pictures/coffee3.webp) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.intro::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.intro-content {
+  width: 60%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-size: 68px;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.intro-content p {
+  color: rgb(240, 240, 240);
+  margin-bottom: 40px;
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.intro-content button {
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 2px;
+  border: 1px solid white;
+  margin-left: 5px;
+  cursor: pointer;
+  color: rgb(238, 233, 233);
+  background-color: rgba(72, 3, 3, 0.313);
+}
+
+.intro .intro-btn1 {
+  background-color: white;
+  color: black;
+}
+
+.intro-content button:hover {
+  opacity: 0.5;
+}
+
+/* ----------------------------------------- section 2 ------------------------------------------ */
+
+.welcom {
+  height: 100vh;
+}
+
+.welcome-main-header h2,
+.feature-main-header h2,
+.offer-main-header h2,
+.pricing-main-header h2,
+.team-main-header h2,
+.news-main-header h2 {
+  text-align: center;
+  padding-top: 130px;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+.line {
+  height: 4px;
+  width: 100px;
+  background-color: blue;
+  margin: 20px auto 80px;
+}
+
+.welcome-container,
+.feature-container,
+.offer-container,
+.choose-container,
+.pricing-container,
+.team-container,
+.news-container {
+  width: 75%;
+  margin: auto;
+}
+
+.welcome-parent,
+.team-parent,
+.news-parent {
+  font-size: 0;
+}
+
+.welcome-card,
+.pricing-card,
+.team-card,
+.news-card {
+  display: inline-block;
+  width: 30%;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+}
+
+.welcome-card::before,
+.offer-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  background-color: rgb(67, 30, 30);
+  border-radius: 20px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.welcome-card:hover::before,
+.offer-card:hover::before {
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.welcome-card:hover h2,
+.offer-card:hover h2 {
+  color: #fff;
+}
+.welcome-card:hover p,
+.offer-card:hover p {
+  color: black;
+}
+
+.welcome-card i {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.welcome-card h2,
+.offer-card h2 {
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-size: 24px;
+  position: relative;
+}
+
+.welcome-card p,
+.offer-card p,
+.choose-words-content-p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: rgb(110, 107, 107);
+}
+
+.welcome-card a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  position: relative;
+}
+
+.welcome-card2 {
+  margin: 0px 5%;
+}
+
+/* ------------------------------------------- feature section 3--------------------------------------- */
+
+.feature {
+  height: 100vh;
+  background-color: rgba(240, 240, 239, 0.484);
+}
+
+.feature-main-header h2 {
+  padding-top: 70px;
+}
+
+.feature-main-header p {
+  margin-bottom: 60px;
+}
+
+.feature-card {
+  display: inline-block;
+  width: 30%;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4%;
+}
+
+.feature-card:hover .feature-card-content {
+  visibility: visible;
+}
+
+.feature-card1 {
+  background: url(../pictures/cofee1.jpg) no-repeat center/cover;
+}
+
+.feature-card2 {
+  background: url(../pictures/coffee2.jpg) no-repeat center/cover;
+  margin: 0px 4% 4%;
+}
+
+.feature-card3 {
+  background: url(../pictures/coffee3.webp) no-repeat center/cover;
+}
+
+.feature-card4 {
+  background: url(../pictures/coffe4.jpg) no-repeat center/cover;
+}
+
+.feature-card5 {
+  background: url(../pictures/coffee5.jpg) no-repeat center/cover;
+  margin: 0px 4% 4%;
+}
+
+.feature-card6 {
+  background: url(../pictures/cofee6.jpg) no-repeat center/cover;
+}
+
+.feature-card-content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  visibility: hidden;
+}
+
+.feature-card-content h2 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin: 18px 0;
+  letter-spacing: 2px;
+}
+
+.feature-card-content p {
+  color: white;
+  font-size: 17px;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.feature-card-content i {
+  background-color: #fff;
+  color: red;
+  font-size: 18px;
+  display: inline-block;
+  border-radius: 10px;
+  height: 30px;
+  line-height: 30px;
+  width: 40px;
+  cursor: pointer;
+}
+
+/*------------------------------------------- section 4 --------------------------------------------*/
+
+.offer {
+  height: 100vh;
+}
+
+.offer-main-header h2 {
+  padding-top: 70px;
+}
+
+.offer-main-header p {
+  margin-bottom: 60px;
+}
+
+.offer-card {
+  display: inline-block;
+  width: 30%;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid black;
+  position: relative;
+  margin-bottom: 4%;
+}
+
+.offer-card a {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+  font-size: 28px;
+}
+
+.offer-card-info {
+  display: inline-block;
+  margin-left: 33px;
+}
+
+.offer-card2,
+.offer-card5 {
+  margin: 0 4%;
+}
+
+.offer-card h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  letter-spacing: normal;
+}
+
+.offer-card p {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+/*-------------------------------------------- section5 -------------------------------------------*/
+
+.choose {
+  height: 100vh;
+}
+
+.choose-parent {
+  overflow: auto;
+  padding-top: 200px;
+}
+
+.choose-words-content {
+  float: left;
+  width: 55%;
+}
+
+.choose-img-content {
+  float: right;
+  padding-right: 25px;
+  text-align: center;
+}
+
+.choose-words-content h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.choose .choose-words-content .line {
+  margin: 10px 0 40px;
+  width: 70px;
+}
+
+.choose-words-content-p {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.choose-words-content ul {
+  list-style-type: none;
+  padding-top: 5px;
+}
+
+.choose-words-content ul li {
+  padding: 10px 0;
+}
+
+.choose-words-content ul li::before {
+  content: "✓";
+  color: green;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.choose-img-content img {
+  height: 460px;
+  width: 330px;
+  margin-top: -30px;
+}
+
+.choose-img-content ol {
+  list-style-type: none;
+}
+.choose-img-content ol li {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(174, 174, 175);
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.choose-img-content ol li:hover,
+.choose-img-content ol .choose-focus {
+  background-color: rgb(147, 147, 235);
+}
+
+/*--------------------------------------------- section 6 ------------------------------------------*/
+
+.achievements,
+.employees {
+  height: 100vh;
+  width: 100%;
+}
+
+.achievements-container,
+.employees-container {
+  height: inherit;
+  width: 100%;
+  padding-top: 185px;
+}
+
+.achievements-parent,
+.employees-parent {
+  height: 400px;
+  width: 100%;
+  background: url(../pictures/coffee8.jpg) no-repeat fixed center / cover;
+  text-align: center;
+  padding-top: 145px;
+  position: relative;
+}
+
+.achievements-parent::before,
+.employees-parent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.achievements-content {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+}
+
+.achievements-content i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #f0d1b7;
+}
+
+.achievements-content h3,
+.achievements-content p {
+  color: #fff;
+  margin: 3px;
+}
+
+/*---------------------------------------------- section 7 ------------------------------------------*/
+
+.pricing {
+  height: 100vh;
+}
+
+.pricing-main-header,
+.pricing-container {
+  margin-top: -20px;
+}
+
+.pricing-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  border-radius: 20px;
+  background-color: rgb(92, 13, 13, 0.1);
+  transition: 0.5s;
+}
+
+.pricing-card:hover::before {
+  height: 100%;
+}
+
+.pricing-card-price {
+  border: 1px solid;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 20px auto;
+  padding-top: 20px;
+}
+
+.pricing-card h2 {
+  font-size: 32px;
+}
+
+.pricing-card-price span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+}
+
+.pricing-card ul li {
+  margin: 25px;
+}
+
+.pricing-card button {
+  padding: 8px 25px;
+  position: relative;
+  cursor: pointer;
+  background-color: #c75d22;
+  color: white;
+  border: 1px solid #533b28;
+  border-radius: 30px;
+}
+
+.pricing-card button:hover{
+background-color: white;
+  color:#c75d22 ;
+
+}
+
+.pricing-card2 {
+  margin: 4%;
+}
+
+/*-------------------------------------------- section 8 -------------------------------------------*/
+
+.employees-parent {
+  background: url(../pictures/coffee9.jpg) no-repeat fixed center / cover;
+  padding-top: 85px;
+  padding: 85px 90px 0;
+}
+
+.employees-content {
+  display: inline-block;
+  width: 49%;
+  position: relative;
+  padding: 50px 100px;
+  text-align: start;
+}
+
+.employees-content img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+
+.employees-info-name {
+  display: inline-block;
+  margin: 0 0 40px 130px;
+  text-transform: capitalize;
+}
+
+.employees-info-name h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.employees-info-name h3 {
+  font-size: 18px;
+  color: rgb(196, 196, 196);
+}
+
+.employees-info p {
+  color: white;
+}
+
+/* --------------------------------------------- section 9 ----------------------------------------*/
+
+.team {
+  height: 100vh;
+}
+
+.team-main-header h2 {
+  padding-top: 70px;
+}
+
+.team-card {
+  font-size: 16px;
+  background-color: rgb(220, 210, 210);
+  border: none;
+  position: relative;
+  overflow: auto;
+}
+
+.team-card::before,
+.news-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.team-card:hover::before,
+.news-card:hover::before {
+  height: 100%;
+}
+
+.team-card:hover h3,
+.news-card:hover h3 {
+  color: white;
+}
+
+.team-card:hover p,
+.news-card:hover p {
+  color: black;
+}
+
+.team-card2 {
+  margin: 0 5%;
+}
+
+.team-card-pic {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+.team-card-pic img {
+  width: 100%;
+  height: 270px;
+  display: block;
+}
+
+.team-card-pic-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+
+.team-card:hover .team-card-pic-icon {
+  visibility: visible;
+}
+.team-card-pic-icon a {
+  display: block;
+  font-size: 20px;
+  height: 45px;
+  width: 45px;
+  background-color: rgb(101, 101, 236);
+  color: white;
+  line-height: 40px;
+  margin-left: auto;
+}
+
+.team-card h3 {
+  margin: 20px auto 18px;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.team-card p {
+  font-size: 17px;
+  color: rgb(89, 89, 89);
+  text-transform: uppercase;
+}
+/* -------------------------- section 10 ---------------------- */
+
+.news {
+  height: 100vh;
+}
+
+.news-main-header h2 {
+  padding-top: 55px;
+}
+.news .line {
+  margin-bottom: 50px;
+}
+
+.news-card {
+  font-size: 16px;
+  overflow: auto;
+}
+
+.news-card::before {
+  z-index: -1;
+}
+
+.news-card img {
+  width: 80%;
+  height: 270px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.news-card ul {
+  list-style-type: none;
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+.news-card ul li {
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+.news-card ul li a {
+  color: blue;
+}
+
+.news-card h3 {
+  margin: 5px auto 15px;
+}
+
+.news-card p {
+  color: rgb(89, 89, 89);
+  margin-bottom: 13px;
+}
+
+.news-card a {
+  text-decoration: none;
+}
+
+.news-card2 {
+  margin: 0 5%;
+}
+
+/*------------------------------------ footer --------------------------------------*/
+
+.footer-sec {
+  margin-top: 60px;
+  background-color: #0f0801;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content img {
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  margin: 10px;
+}
+
+.footer-icons a {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  background-color: white;
+  opacity: 0.6;
+  color: blue;
+  transition: .4s;
+}
+.footer-icons a:hover {
+  opacity: 1;
+}
+
+.footer-content p {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.footer-content p a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content p a:hover{
+  color: rgb(206, 177, 12);
+}
